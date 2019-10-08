@@ -1,9 +1,19 @@
 <?php
+
   get_header();
-    while( have_posts() ) :
+  pageBanner();
+
+    while( have_posts()) :
       the_post(); ?>
-      <h1><?php the_title(); ?></h1>
-      <p><?php the_content(); ?></h1>
-    <?php endwhile;
-  get_footer();
+      <div class="container container--narrow page-section">
+        <div class="metabox metabox--position-up metabox--with-home-link">
+          <p><a class="metabox__blog-home-link" href="<?php echo site_url('/blog') ?>"><i class="fa fa-home" aria-hidden="true"></i> Blog Home</a> <span class="metabox__main">Posted by <?php the_author_posts_link(); ?> on <?php the_time('n.j.y'); ?> in <?php echo get_the_category_list(', '); ?></span></p>
+        </div>
+        <div class="generic-content"><?php the_content(); ?></div>
+
+      <?php endwhile; ?>
+    </div> <!-- container -->
+
+  <?php get_footer();
+
 ?>
