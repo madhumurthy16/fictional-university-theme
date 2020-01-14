@@ -23,7 +23,7 @@
                 <li><a href="#">Programs</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">Campuses</a></li>
-              </ul> 
+              </ul>
             </nav>
           </div>
 
@@ -60,6 +60,7 @@
 
     </div>
   </footer>
+  
   <?php wp_footer(); ?>
 </body>
 </html>
