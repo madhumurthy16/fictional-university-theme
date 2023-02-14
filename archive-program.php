@@ -7,7 +7,7 @@
   ))
   ?>
 
-  <div class="container container--narrow page-section">
+  <div class="container container--narrow page-section"><p>Testing No.3</p>
     <ul class="link-list min-list">
       <?php
         while(have_posts()) {
