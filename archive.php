@@ -7,7 +7,7 @@
     ));
   ?>
 
-  <div class="container container--narrow page-section">
+  <div class="container container--narrow page-section"><p>Testing</p>
     <?php
       while(have_posts()) {
         the_post(); ?>
